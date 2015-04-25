@@ -1,0 +1,13 @@
+# Site settings
+title: Abhishek Jain
+email: abhi2000@gmail.com
+description:
+  Abhishek Jain
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://abhishekjain.net" # the base hostname & protocol for your site
+twitter_username: jainabhishek79
+github_username:  jabhishek
+encoding: utf-8
+
+# Build settings
+highlighter: rouge
