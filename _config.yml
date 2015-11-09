@@ -8,5 +8,8 @@ url: "http://abhishekjain.net" # the base hostname & protocol for your site
 twitter_username: jainabhishek79
 github_username:  jabhishek
 
+exclude: [node_modules]
+
 # Build settings
 markdown: kramdown
+highlighter: rouge
