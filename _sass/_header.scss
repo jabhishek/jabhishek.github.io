@@ -1,0 +1,50 @@
+header {
+  background: $header-background;
+  color: $header-text-color;
+
+  a {
+    color: $header-text-color;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    .site-title {
+      flex: 1;
+    }
+
+    nav {
+      ul {
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        line-height: $header-height;
+        li {
+          padding: 0 2rem;
+          transition: 0.3s;
+          &:hover {
+            box-shadow: 0 0 10px 0 #222 inset;
+            opacity: 1;
+          }
+
+          a {
+            color: rgba(white, 0.8);
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .site-title {
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s opacity;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

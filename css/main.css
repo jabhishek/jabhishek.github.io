@@ -1,12 +1,34 @@
-html {
-  font-size: 62.5%;
-  font-family: "Open Sans", Arial, sans-serif; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
 body {
-  font-size: 1.3rem; }
-  @media screen and (min-width: 720px) {
-    body {
-      font-size: 1.5rem; } }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /**
  * Syntax highlighting styles
@@ -146,3 +168,117 @@ body {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", Arial, sans-serif; }
+  @media screen and (min-width: 720px) {
+    html {
+      font-size: 70%; } }
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none;
+  color: #222;
+  font-weight: normal; }
+  a:hover {
+    color: #666; }
+
+.wrapper {
+  padding: 0 0.5rem; }
+  @media screen and (min-width: 960px) {
+    .wrapper {
+      width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem; } }
+
+p {
+  margin: 1rem 0; }
+
+h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 1rem 0; }
+
+.post-info {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border-bottom: 1px solid #eeeeee;
+  text-transform: uppercase; }
+  .post-info a {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 1.8rem;
+    text-decoration: none; }
+  .post-info .post-meta {
+    font-size: 1.3rem; }
+
+.post a {
+  color: #1e88e5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .post a:hover {
+    text-decoration: underline; }
+
+header {
+  background: #000;
+  color: #fff; }
+  header a {
+    color: #fff; }
+  header .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0; }
+    header .wrapper .site-title {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    header .wrapper nav ul {
+      height: 50px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      line-height: 50px; }
+      header .wrapper nav ul li {
+        padding: 0 2rem;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+        header .wrapper nav ul li:hover {
+          -webkit-box-shadow: 0 0 10px 0 #222 inset;
+                  box-shadow: 0 0 10px 0 #222 inset;
+          opacity: 1; }
+        header .wrapper nav ul li a {
+          color: rgba(255, 255, 255, 0.8); }
+          header .wrapper nav ul li a:hover {
+            color: white; }
+  header .site-title {
+    color: white;
+    font-size: 2rem;
+    -webkit-transition: 0.3s opacity;
+    transition: 0.3s opacity; }
+    header .site-title:hover {
+      opacity: 1; }

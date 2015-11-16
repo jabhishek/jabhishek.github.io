@@ -1,12 +1,69 @@
 html {
-    font-size: 62.5%;
-    font-family: $base-font-family;
+  font-size: 62.5%;
+  font-family: $base-font-family;
+  @include media-query($portrait) {
+    font-size: 70%;
+  }
 }
 
 body {
-    font-size: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
 
-    @include media-query($portrait) {
-        font-size: 1.5rem;
+a {
+  text-decoration: none;
+  color: #222;
+  font-weight: normal;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+.wrapper {
+  padding: 0 0.5rem;
+  @include media-query($standard) {
+    width: $content-width-standard;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid #e2e2e2;
+  margin: 1rem 0;
+}
+
+.post-info {
+  margin: 2rem 0;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid #eeeeee;
+  text-transform: uppercase;
+
+  a {
+    flex: 1;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  .post-meta {
+    font-size: 1.3rem;
+  }
+}
+
+.post {
+  a {
+    color: #1e88e5;
+    transition: 0.2s;
+    &:hover {
+      text-decoration: underline;
     }
+  }
 }
