@@ -1,2 +1,2 @@
-let fn = () => "Hello World!!!";
+let fn = () => "Hello World!!!!";
 export default fn;

@@ -178,7 +178,8 @@ html {
 
 body {
   font-size: 1.5rem;
-  line-height: 1.4; }
+  line-height: 1.4;
+  height: 100vh; }
 
 a {
   text-decoration: none;
@@ -232,11 +233,19 @@ h1 {
   .post a:hover {
     text-decoration: underline; }
 
+.page-content {
+  padding-bottom: 2rem;
+  min-height: 50vh; }
+
 header {
   background: #000;
   color: #fff; }
   header a {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    header a:hover {
+      color: white; }
   header .wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -264,21 +273,22 @@ header {
               align-items: center;
       line-height: 50px; }
       header .wrapper nav ul li {
-        padding: 0 2rem;
-        -webkit-transition: 0.3s;
-        transition: 0.3s; }
+        padding: 0 2rem; }
         header .wrapper nav ul li:hover {
           -webkit-box-shadow: 0 0 10px 0 #222 inset;
-                  box-shadow: 0 0 10px 0 #222 inset;
-          opacity: 1; }
-        header .wrapper nav ul li a {
-          color: rgba(255, 255, 255, 0.8); }
-          header .wrapper nav ul li a:hover {
-            color: white; }
+                  box-shadow: 0 0 10px 0 #222 inset; }
   header .site-title {
-    color: white;
-    font-size: 2rem;
-    -webkit-transition: 0.3s opacity;
-    transition: 0.3s opacity; }
-    header .site-title:hover {
-      opacity: 1; }
+    font-size: 2rem; }
+
+footer.site-footer {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center; }
+
+footer .social-icons {
+  padding-top: 1rem; }
+  footer .social-icons a {
+    font-size: 1.3rem;
+    padding: 0 1rem; }

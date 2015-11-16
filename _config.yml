@@ -5,10 +5,32 @@ description: > # this means to ignore newlines until "baseurl:"
   Abhishek Jain's blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://abhishekjain.net" # the base hostname & protocol for your site
-twitter_username: jainabhishek79
-github_username:  jabhishek
 
 exclude: [node_modules]
 
 # Build settings
 markdown: kramdown
+
+# Site owner
+owner:
+  name: Abhishek Jain
+  avatar: bio-photo.jpg
+  email: abhi2000@gmail.com
+  disqus-shortname: abhishekjain
+  twitter: jainabhishek79
+  facebook: #username
+  github: jabhishek
+  stackexchange: http://stackoverflow.com/users/366436/abhishek-jain
+  linkedin: abhishekjainuk
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:

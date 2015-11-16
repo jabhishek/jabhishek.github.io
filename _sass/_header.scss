@@ -3,7 +3,11 @@ header {
   color: $header-text-color;
 
   a {
-    color: $header-text-color;
+    color: rgba(white, 0.9);
+    transition: 0.3s;
+    &:hover {
+      color: white;
+    }
   }
 
   .wrapper {
@@ -22,17 +26,8 @@ header {
         line-height: $header-height;
         li {
           padding: 0 2rem;
-          transition: 0.3s;
           &:hover {
             box-shadow: 0 0 10px 0 #222 inset;
-            opacity: 1;
-          }
-
-          a {
-            color: rgba(white, 0.8);
-            &:hover {
-              color: white;
-            }
           }
         }
       }
@@ -40,11 +35,6 @@ header {
   }
 
   .site-title {
-    color: white;
     font-size: 2rem;
-    transition: 0.3s opacity;
-    &:hover {
-      opacity: 1;
-    }
   }
 }
