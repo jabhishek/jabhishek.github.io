@@ -4,9 +4,21 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
 var runSequence = require('run-sequence');
+var webpack = require('webpack');
+var webpackConfig = require("./webpack.config.js");
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+gulp.task("webpack:build", function(callback) {
+	// modify some webpack config options
+	var myConfig = Object.create(webpackConfig);
+
+	// run webpack
+	webpack(myConfig, function(err, stats) {
+		callback();
+	});
+});
 
 /**
  * Build the Jekyll Site
@@ -64,11 +76,16 @@ gulp.task('default', function () {
  */
 gulp.task('watch', function () {
 	gulp.watch('_sass/**/*.scss', ['sass']);
+	gulp.watch('scripts/**/*.js', ['webpack:build']);
+	gulp.watch('_site/**/*.js', function(){
+		bs.reload();
+	});
 	gulp.watch([
 		'index.html',
 		'_layouts/*',
 		'_includes/*',
 		'about/*',
+		'dist/*',
 		'_posts/*'
 	], ['jekyll-rebuild']);
 });
