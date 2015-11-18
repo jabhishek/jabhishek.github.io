@@ -9,6 +9,7 @@ url: "http://abhishekjain.net" # the base hostname & protocol for your site
 exclude: [node_modules]
 
 # Build settings
+permalink:   /:categories/:title/
 markdown: kramdown
 
 # Site owner

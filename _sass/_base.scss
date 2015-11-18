@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   font-family: $base-font-family;
@@ -25,33 +29,35 @@ a {
 .wrapper {
   padding: 0 0.5rem;
   @include media-query($standard) {
-    width: $content-width-standard;
+    min-width: $content-width-standard;
+    width: 80%;
     margin: 0 auto;
     padding: 0 1rem;
   }
 }
 
 p {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 h1 {
   font-size: 3rem;
-  border-bottom: 1px solid #e2e2e2;
   margin: 1rem 0;
 }
 
 .post-info {
-  margin: 2rem 0;
+  margin: 3rem 0;
   display: flex;
   align-items: baseline;
   border-bottom: 1px solid #eeeeee;
-  text-transform: uppercase;
+  padding-bottom: 1rem;
+  //text-transform: uppercase;
 
   a {
     flex: 1;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
+    font-style: italic;
   }
 
   .post-meta {
@@ -60,16 +66,33 @@ h1 {
 }
 
 .post {
+  .post-header {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+
+    .post-title {
+      margin-bottom: 0;
+    }
+    .post-meta {
+      margin: 0;
+      font-weight: 300;
+      font-size: 1.3rem;
+    }
+  }
+
+}
+.page {
+  h1 {
+    border-bottom: 1px solid #e2e2e2;
+  }
+
   a {
     color: #1e88e5;
-    transition: 0.2s;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
 .page-content {
   padding-bottom: 2rem;
-  min-height: 50vh;
+  min-height: 85vh;
 }

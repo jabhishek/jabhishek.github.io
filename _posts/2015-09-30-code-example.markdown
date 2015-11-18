@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hello World!!!"
-date:   2015-09-29 13:18:46
-categories: hello
+title:  "Code example"
+date:   2015-09-30 13:18:46
+categories: code
 ---
 Hello World
 
