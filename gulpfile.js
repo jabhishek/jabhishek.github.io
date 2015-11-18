@@ -42,7 +42,8 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function () {
 	bs.init({
 		server: {
-			baseDir: '_site'
+			baseDir: '_site',
+			port: 8000
 		}
 	});
 });

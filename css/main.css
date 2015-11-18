@@ -179,7 +179,7 @@ html {
 body {
   font-size: 1.5rem;
   line-height: 1.4;
-  height: 100vh; }
+  height: 100%; }
 
 a {
   text-decoration: none;
@@ -240,6 +240,14 @@ h1 {
 header {
   background: #000;
   color: #fff; }
+  header.home-page {
+    height: 100vh;
+    background: url("/images/photo-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden; }
+    header.home-page .navbar {
+      background: rgba(0, 0, 0, 0.75); }
   header a {
     color: rgba(255, 255, 255, 0.9);
     -webkit-transition: 0.3s;
@@ -256,11 +264,6 @@ header {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0; }
-    header .wrapper .site-title {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-          -ms-flex: 1;
-              flex: 1; }
     header .wrapper nav ul {
       height: 50px;
       display: -webkit-box;
@@ -272,13 +275,21 @@ header {
           -ms-flex-align: center;
               align-items: center;
       line-height: 50px; }
-      header .wrapper nav ul li {
+      header .wrapper nav ul li a {
+        display: block;
         padding: 0 2rem; }
-        header .wrapper nav ul li:hover {
-          -webkit-box-shadow: 0 0 10px 0 #222 inset;
-                  box-shadow: 0 0 10px 0 #222 inset; }
   header .site-title {
-    font-size: 2rem; }
+    font-size: 2.5rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 2; }
+  header .social-icons a {
+    font-size: 1rem;
+    padding: 0 0.2rem; }
 
 footer.site-footer {
   border-top: 1px solid #eee;

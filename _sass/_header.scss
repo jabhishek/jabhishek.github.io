@@ -1,6 +1,17 @@
 header {
   background: $header-background;
   color: $header-text-color;
+  &.home-page {
+    height: 100vh;
+    background: url('/images/photo-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.75);
+    }
+  }
 
   a {
     color: rgba(white, 0.9);
@@ -14,9 +25,6 @@ header {
     display: flex;
     align-items: center;
     padding-right: 0;
-    .site-title {
-      flex: 1;
-    }
 
     nav {
       ul {
@@ -25,9 +33,9 @@ header {
         align-items: center;
         line-height: $header-height;
         li {
-          padding: 0 2rem;
-          &:hover {
-            box-shadow: 0 0 10px 0 #222 inset;
+          a {
+            display: block;
+            padding: 0 2rem;
           }
         }
       }
@@ -35,6 +43,18 @@ header {
   }
 
   .site-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    flex: 1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 2;
   }
+
+  .social-icons {
+    a {
+      font-size: 1rem;
+      padding: 0 0.2rem;
+    }
+  }
+
 }
