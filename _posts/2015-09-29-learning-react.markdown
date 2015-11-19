@@ -3,6 +3,9 @@ layout: post
 title:  "Learning React"
 date:   2015-09-29 13:18:46
 categories: react
+excerpt: Page description
+tags: React
+keywords: [React, javascript]
 ---
 Suspendisse pede, nam donec est, duis impedit torquent. Faucibus volutpat vel, leo rhoncus sed. Consequat quis tempor, velit enim. Senectus dui ac, amet mattis. Eu porta est, auctor euismod amet.
 

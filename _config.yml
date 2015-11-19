@@ -1,6 +1,7 @@
 # Site settings
 title: Abhishek Jain
 email: abhi2000@gmail.com
+locale: en_GB
 description: > # this means to ignore newlines until "baseurl:"
   Abhishek Jain's blog
 baseurl: "" # the subpath of your site, e.g. /blog/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Travelling the World"
+title:  "Travelling Around the World"
 date:   2015-10-01 13:18:46
 categories: travel
 ---
