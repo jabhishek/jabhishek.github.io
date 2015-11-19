@@ -9,6 +9,9 @@ var webpackConfig = require("./webpack.config.js");
 var messages = {
 	jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+var minifyCss = require('gulp-minify-css');
+var sourcemaps = require('gulp-sourcemaps');
+
 
 gulp.task("webpack:build", function(callback) {
 	// modify some webpack config options
@@ -58,6 +61,9 @@ gulp.task('sass', function () {
 			onError: bs.notify
 		}))
 		.pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
+		.pipe(sourcemaps.init())
+		.pipe(minifyCss())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('_site/css'))
 		.pipe(bs.stream({once: true}))
 		.pipe(gulp.dest('./css'));
