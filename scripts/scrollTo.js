@@ -1,5 +1,4 @@
 export default function scroll($element, $toElement, duration) {
-	var pageOffset = $toElement.offset().top;
-	console.log(pageOffset);
+	const pageOffset = $toElement.offset().top;
 	$element.animate({ scrollTop: pageOffset}, duration);
 };

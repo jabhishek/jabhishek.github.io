@@ -57,19 +57,13 @@
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	var _another = __webpack_require__(3);
-	
-	var _another2 = _interopRequireDefault(_another);
-	
-	var _scrollTo = __webpack_require__(4);
+	var _scrollTo = __webpack_require__(3);
 	
 	var _scrollTo2 = _interopRequireDefault(_scrollTo);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	console.log((0, _another2.default)());
-	
-	(0, _jquery2.default)('.button-scroll').on('click', function () {
+	(0, _jquery2.default)('.button-scroll').on('click', function clickHandler() {
 		(0, _scrollTo2.default)((0, _jquery2.default)('html, body'), (0, _jquery2.default)('.page-content'), 500);
 	});
 
@@ -9296,24 +9290,11 @@
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	let fn = () => "Hello World!!!!";
-	exports.default = fn;
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 	exports.default = scroll;
 	function scroll($element, $toElement, duration) {
-		var pageOffset = $toElement.offset().top;
-		console.log(pageOffset);
+		const pageOffset = $toElement.offset().top;
 		$element.animate({ scrollTop: pageOffset }, duration);
 	};
 

@@ -1,10 +1,8 @@
-'use strict';
-
 import $ from 'jquery';
-import fn from './another';
 import scrollTo from './scrollTo';
-console.log(fn());
 
-$('.button-scroll').on('click', function() {
+$('.button-scroll').on('click', function clickHandler() {
 	scrollTo($('html, body'), $('.page-content'), 500);
 });
+
+
