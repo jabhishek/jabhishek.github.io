@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://abhishekjain.net" # the base hostname & protocol for your site
 
 exclude: [node_modules]
+include: [Robots.txt]
 
 # Build settings
 permalink:   /:categories/:title/
