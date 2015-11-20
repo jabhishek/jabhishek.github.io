@@ -91,9 +91,11 @@ gulp.task('watch', function () {
 		'index.html',
 		'_layouts/*',
 		'_includes/*',
+		'_posts/*',
 		'about/*',
-		'dist/*',
-		'_posts/*'
+		'blog/*',
+		'css/*',
+		'dist/*'
 	], ['jekyll-rebuild']);
 });
 

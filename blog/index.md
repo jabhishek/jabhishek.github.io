@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Blog
+title: Abhishek Jain's Blog
+headerText: Blog
 excerpt: "An archive of blog posts by Abhishek Jain sorted by date."
 search_omit: true
+permalink: /blog/
 ---
 
 <ul class="post-list">

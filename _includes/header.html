@@ -13,7 +13,9 @@
                                     {% for page in site.pages %}
                                     {% if page.title %}
                                     <li>
-                                        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                                        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+                                            {% if page.headerText %}{{ page.headerText }}{% else %}{{ page.title }}{% endif %}
+                                        </a>
                                     </li>
                                     {% endif %}
                                     {% endfor %}

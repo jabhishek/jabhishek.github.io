@@ -4,7 +4,9 @@ layout: default
 <div class="page">
 
   <section class="page-header">
-    <h2 class="page-title">{{ page.title }}</h2>
+    <h2 class="page-title">
+      {% if page.headerText %}{{ page.headerText }}{% else %}{{ page.title }}{% endif %}
+    </h2>
   </section>
 
   <article class="page-content">
