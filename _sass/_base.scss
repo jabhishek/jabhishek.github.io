@@ -45,6 +45,21 @@ h1 {
   margin: 1rem 0;
 }
 
+h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.page {
+  h2 {
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  a {
+    color: #1e88e5;
+  }
+}
+
 .post-info {
   margin: 3rem 0;
   display: flex;
@@ -58,6 +73,7 @@ h1 {
     font-size: 2rem;
     text-decoration: none;
     font-style: italic;
+    color: #222;
   }
 
   .post-meta {
@@ -80,17 +96,8 @@ h1 {
       font-size: 1.3rem;
     }
   }
-
 }
-.page {
-  h1 {
-    border-bottom: 1px solid #e2e2e2;
-  }
 
-  a {
-    color: #1e88e5;
-  }
-}
 
 .page-content {
   padding-bottom: 2rem;

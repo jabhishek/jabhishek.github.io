@@ -2,7 +2,7 @@
 layout: post
 title:  "Lorem Ipsum"
 date:   2015-10-02 13:18:46
-categories: lorem
+categories: blog
 ---
 Velit mauris orci. Morbi maecenas. Dignissim vitae, tellus quam erat. Bibendum dis ac, a consequat fermentum. Sed orci recusandae. Litora in sit.
 

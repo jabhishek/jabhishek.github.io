@@ -2,7 +2,7 @@
 layout: post
 title:  "Travelling Around the World"
 date:   2015-10-01 13:18:46
-categories: travel
+categories: blog
 ---
 Nibh amet sed. Hendrerit nulla, tempor rutrum. Nec velit. Dapibus aenean, mauris et, at posuere. Tellus massa nibh, lacinia donec enim, at quam non.
 
