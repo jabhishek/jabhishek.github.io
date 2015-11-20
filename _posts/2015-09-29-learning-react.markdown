@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning React"
+title:  "Learning react"
 date:   2015-09-29 13:18:46
 categories: blog
 excerpt: Page description
